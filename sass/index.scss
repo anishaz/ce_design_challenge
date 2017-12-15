@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+.tweets li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
