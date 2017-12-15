@@ -1,5 +1,23 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
+.section {
+  //@extend .jumbotron;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  @include make-xs-column(12);
+}
+
+.home {
+  @media (min-width: $screen-md-max) {
+    background-image: url(/assets/images/ww-smiling.jpg);
+  };
+}
+
+.office-locations{
+  background-image: url(/assets/images/ww_logo.jpg);
+}
+
 .tweets li {
   list-style: none;
   margin-bottom: 10px;

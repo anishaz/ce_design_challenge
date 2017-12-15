@@ -5814,6 +5814,24 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 1199px) {
+  .home {
+    background-image: url(/assets/images/ww-smiling.jpg); } }
+
+.office-locations {
+  background-image: url(/assets/images/ww_logo.jpg); }
+
 .tweets li {
   list-style: none;
   margin-bottom: 10px; }
