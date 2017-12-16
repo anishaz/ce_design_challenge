@@ -1,11 +1,10 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 .section {
-  //@extend .jumbotron;
+  @include make-xs-column(12);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
-  @include make-xs-column(12);
 }
 
 .home {
