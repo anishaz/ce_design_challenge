@@ -1,10 +1,39 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+}
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+main {
+  @extend .container;
+}
+
 .section {
   @include make-xs-column(12);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
+  margin-bottom: 40px;
+}
+
+.box {
+  @include make-xs-column(12);
+  background-color: #fff;
+  height: 300px;
+  width: 350px;
+  @media (min-width: $screen-md-max) {
+    margin-top: 150px;
+    margin-left: 40px;
+  }
 }
 
 .home {
@@ -13,13 +42,27 @@
   };
 }
 
-.office-locations{
-  background-image: url(/assets/images/ww_logo.jpg);
+.about {
+  @media (min-width: $screen-md-max) {
+    background-image: url(/assets/images/ww-about.jpg);
+  };
 }
 
-.tweets li {
-  list-style: none;
-  margin-bottom: 10px;
+//Twitter & Press Release section
+
+.feed {
+  @include make-xs-column(12);
+  @include make-md-column(3);
+}
+
+.press {
+  @include make-xs-column(12);
+  @include make-md-column(3);
+
+}
+
+.office-locations{
+  background-image: url(/assets/images/ww_logo.jpg);
 }
 
 .footer {
