@@ -5815,6 +5815,7 @@ button.close {
     display: none !important; } }
 
 body {
+  background: #a59ba6;
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3 {
@@ -5826,7 +5827,17 @@ h2 {
   font-size: 42px; }
 
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 50px; }
+
+.navbar-default {
+  background: #4e424c; }
+  .navbar-default .navbar-brand {
+    font-family: 'Old Standard TT', Georgia, serif;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #fff; }
 
 .section {
   position: relative;
@@ -5836,9 +5847,10 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  border: 1px solid #bbb; }
   @media (min-width: 992px) {
-    .section {
+    .section__image {
       height: 650px;
       margin-bottom: 40px; } }
 
@@ -5907,6 +5919,10 @@ h2 {
   .about {
     background-image: url(/assets/images/ww-about.jpg); } }
 
+@media (min-width: 992px) {
+  .news {
+    padding: 40px 20px; } }
+
 .feed {
   position: relative;
   float: left;
@@ -5922,6 +5938,8 @@ h2 {
     .feed {
       float: left;
       width: 25%; } }
+  .feed h3 {
+    margin-top: 0; }
 
 .press {
   position: relative;

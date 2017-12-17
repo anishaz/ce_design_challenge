@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 body {
+  background: #a59ba6;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -16,7 +17,20 @@ h2 {
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 50px;
+}
+
+.navbar-default {
+  background: #4e424c;
+
+  .navbar-brand {
+    font-family: 'Old Standard TT', Georgia, serif;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }
 
 main {
@@ -27,9 +41,13 @@ main {
   @include make-xs-column(12);
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-width: $screen-md-min) {
-    height: 650px;
-    margin-bottom: 40px;
+  border: 1px solid #bbb;
+
+  &__image {
+    @media (min-width: $screen-md-min) {
+      height: 650px;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -118,11 +136,22 @@ main {
   };
 }
 
+
+//News section
+
+.news {
+  @media (min-width: $screen-md-min) {
+    padding: 40px 20px;
+  };
+}
 //Twitter & Press Release section
 
 .feed {
   @include make-xs-column(12);
   @include make-md-column(3);
+  h3 {
+    margin-top: 0;
+  }
 }
 
 .press {
