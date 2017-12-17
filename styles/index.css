@@ -5819,11 +5819,11 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3 {
-  font-family: 'Old Standard TT', serif; }
+  font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 h2 {
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 42px; }
 
 .navbar {
@@ -5969,8 +5969,12 @@ h2 {
       float: left;
       width: 25%; } }
 
-.post img {
-  height: 150px; }
+.post {
+  background: #eee;
+  padding: 7px;
+  min-height: 300px; }
+  .post img {
+    height: 150px; }
 
 .footer {
   position: relative;

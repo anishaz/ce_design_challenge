@@ -7,13 +7,12 @@ body {
 
 h1, h2, h3 {
   font-family: 'Old Standard TT', serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2 {
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 42px;
-
 }
 
 .navbar {
@@ -171,8 +170,13 @@ main {
   @include make-md-column(3);
 }
 
-.post img {
-  height: 150px;
+.post {
+  background: #eee;
+  padding: 7px;
+  min-height: 300px;
+  & img {
+    height: 150px;
+  }
 }
 
 //footer
