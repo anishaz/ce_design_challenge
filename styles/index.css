@@ -5816,7 +5816,17 @@ button.close {
 
 body {
   background: #a59ba6;
+  color: #2b2b2b;
   font-family: 'Roboto', sans-serif; }
+
+a:link, a:visited {
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 5px;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #f59f9f; }
 
 h1, h2, h3 {
   font-family: 'Old Standard TT', serif;
@@ -5825,6 +5835,10 @@ h1, h2, h3 {
 
 h2 {
   font-size: 42px; }
+
+h3 {
+  color: #2b2b2b;
+  margin-top: 10px; }
 
 .navbar {
   margin-bottom: 50px; }
@@ -5972,9 +5986,23 @@ h2 {
 .post {
   background: #eee;
   padding: 7px;
-  min-height: 300px; }
-  .post img {
-    height: 150px; }
+  min-height: 350px; }
+  .post a:link, .post a:visited {
+    color: #2b2b2b;
+    border-bottom: 1px solid #4e424c; }
+  .post a:hover, .post a:active {
+    color: #f59f9f;
+    border-bottom: none; }
+  .post h3 {
+    min-height: 90px; }
+  .post__image {
+    height: 150px;
+    margin-bottom: 10px; }
+  .post__date {
+    font-family: "Old Standard TT", serif;
+    color: #333;
+    font-style: italic;
+    font-size: 10px; }
 
 .footer {
   position: relative;
@@ -5994,3 +6022,5 @@ h2 {
 @media (min-width: 992px) {
   .social-networks {
     padding: 20px; } }
+
+/*# sourceMappingURL=index.css.map */
