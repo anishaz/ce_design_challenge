@@ -1,0 +1,32 @@
+@mixin links {
+  &:link, &:visited {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    color: #f59f9f;
+  }
+}
+
+@mixin links-body {
+  &:link, &:visited {
+    border-bottom: 1px solid #fff;
+  }
+  &:hover, &:active {
+    border-bottom: none;
+    text-decoration: none;
+  }
+}
+
+@mixin links-alternate {
+  &:link, &:visited {
+    color: #2b2b2b;
+    border-bottom: 1px solid #4e424c;
+  }
+  &:hover, &:active {
+    color: #f59f9f;
+    border-bottom: none;
+  }
+}
