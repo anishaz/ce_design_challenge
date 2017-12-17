@@ -179,6 +179,7 @@ main {
 .feed {
   @include make-xs-column(12);
   @include make-md-column(3);
+
   h3 {
     margin-top: 0;
   }
@@ -194,7 +195,7 @@ main {
 
   ul {
     padding: 0;
-    margin: 0;
+    margin: 0 0 15px 0;
   }
   li {
     list-style: none;
