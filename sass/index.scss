@@ -136,6 +136,17 @@ main {
   };
 }
 
+//Office Location section
+
+.locations{
+  @media (min-width: $screen-md-min) {
+    background-image: url(/assets/images/ww-america.jpg);
+  };
+}
+
+.mini-box {
+  @include make-xs-column(12);
+}
 
 //News section
 
@@ -144,6 +155,7 @@ main {
     padding: 40px 20px;
   };
 }
+
 //Twitter & Press Release section
 
 .feed {
@@ -161,18 +173,6 @@ main {
 
 .post img {
   height: 150px;
-}
-
-//Office Location section
-
-.locations{
-  @media (min-width: $screen-md-min) {
-    background-image: url(/assets/images/ww-logo.jpg);
-  };
-}
-
-.mini-box {
-  @include make-xs-column(12);
 }
 
 //footer

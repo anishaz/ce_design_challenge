@@ -5920,6 +5920,18 @@ h2 {
     background-image: url(/assets/images/ww-about.jpg); } }
 
 @media (min-width: 992px) {
+  .locations {
+    background-image: url(/assets/images/ww-america.jpg); } }
+
+.mini-box {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 992px) {
   .news {
     padding: 40px 20px; } }
 
@@ -5959,18 +5971,6 @@ h2 {
 
 .post img {
   height: 150px; }
-
-@media (min-width: 992px) {
-  .locations {
-    background-image: url(/assets/images/ww-logo.jpg); } }
-
-.mini-box {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
 
 .footer {
   position: relative;
