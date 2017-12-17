@@ -49,6 +49,8 @@ h3 {
     color: #fff;
     @media (min-width: $screen-md-min) {
       font-size: 29px;
+      margin-right: 20px;
+      padding-top: 20px;
     }
   }
 
@@ -57,6 +59,18 @@ h3 {
       background-color: white;
     }
   }
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #f59f9f;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
 }
 
 main {
@@ -285,8 +299,9 @@ main {
   }
 }
 
-.social-networks {
+.social {
   @media (min-width: $screen-md-min) {
     padding: 20px;
   };
+
 }

@@ -5847,8 +5847,7 @@ h3 {
       margin-bottom: 40px; } }
 
 .navbar-default {
-  background: #4e424c;
-  border: none; }
+  background: #4e424c; }
   .navbar-default .navbar-brand {
     font-family: 'Old Standard TT', Georgia, serif;
     font-size: 22px;
@@ -5858,20 +5857,7 @@ h3 {
     color: #fff; }
     @media (min-width: 992px) {
       .navbar-default .navbar-brand {
-        font-size: 29px;
-        margin-right: 20px;
-        padding-top: 20px; } }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: white; }
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #f59f9f; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #ddd; }
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fff; }
+        font-size: 29px; } }
 
 .section {
   position: relative;
@@ -5968,13 +5954,9 @@ h3 {
   padding-left: 15px;
   padding-right: 15px; }
 
-.news {
-  border-top: 1px solid white;
-  padding-top: 40px; }
-  @media (min-width: 992px) {
-    .news {
-      padding: 40px 20px;
-      border-top: 1px solid #bbb; } }
+@media (min-width: 992px) {
+  .news {
+    padding: 40px 20px; } }
 
 .feed {
   position: relative;
@@ -5986,10 +5968,7 @@ h3 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #fff; }
+  padding-right: 15px; }
   @media (min-width: 992px) {
     .feed {
       float: left;
@@ -6016,10 +5995,6 @@ h3 {
     font-size: 12px !important;
     margin-right: 5px;
     color: #4e424c; }
-  @media (min-width: 992px) {
-    .feed {
-      margin-bottom: 0;
-      border-bottom: none; } }
 
 .press {
   position: relative;
@@ -6031,24 +6006,16 @@ h3 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  padding-left: 0;
-  padding-right: 0; }
+  padding-right: 15px; }
   @media (min-width: 992px) {
     .press {
       float: left;
       width: 25%; } }
-  @media (min-width: 992px) {
-    .press {
-      padding-left: 15px;
-      padding-right: 15px; } }
 
 .post {
   background: #eee;
   padding: 7px;
-  padding-bottom: 20px;
-  min-height: 350px;
-  margin-bottom: 40px; }
+  min-height: 350px; }
   .post a:link, .post a:visited {
     color: #2b2b2b;
     border-bottom: 1px solid #4e424c; }
@@ -6058,10 +6025,8 @@ h3 {
   .post h3 {
     min-height: 90px; }
   .post__image {
+    height: 150px;
     margin-bottom: 10px; }
-    @media (min-width: 992px) {
-      .post__image {
-        height: 150px; } }
   .post__date {
     font-family: "Old Standard TT", serif;
     color: #333;
@@ -6086,3 +6051,6 @@ h3 {
 @media (min-width: 992px) {
   .social {
     padding: 20px; } }
+
+.social__icon {
+  font-size: 14px; }
