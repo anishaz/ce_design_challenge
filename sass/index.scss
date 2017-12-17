@@ -46,7 +46,9 @@ main {
   @include make-xs-column(12);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #bbb;
+  @media (min-width: $screen-md-min) {
+    border: 1px solid #bbb;
+  }
 
   &__image {
     @media (min-width: $screen-md-min) {

@@ -5853,8 +5853,10 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
   background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid #bbb; }
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .section {
+      border: 1px solid #bbb; } }
   @media (min-width: 992px) {
     .section__image {
       height: 650px;
