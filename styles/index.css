@@ -5827,17 +5827,23 @@ h2 {
   font-size: 42px; }
 
 .navbar {
-  margin-bottom: 50px; }
+  margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .navbar {
+      margin-bottom: 40px; } }
 
 .navbar-default {
   background: #4e424c; }
   .navbar-default .navbar-brand {
     font-family: 'Old Standard TT', Georgia, serif;
-    font-size: 29px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
     color: #fff; }
+    @media (min-width: 992px) {
+      .navbar-default .navbar-brand {
+        font-size: 29px; } }
 
 .section {
   position: relative;
@@ -5853,6 +5859,8 @@ h2 {
     .section__image {
       height: 650px;
       margin-bottom: 40px; } }
+  .section img {
+    margin-top: 15px; }
 
 .box {
   position: relative;
@@ -5862,26 +5870,29 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
   color: white;
-  width: 395px;
-  height: 310px;
   padding: 10px; }
   @media (min-width: 992px) {
     .box {
       margin-top: 150px;
-      margin-left: 40px; } }
+      margin-left: 40px;
+      width: 395px;
+      height: 310px; } }
   .box__right {
     float: right; }
-    @media (min-width: 1199px) {
+    @media (min-width: 992px) {
       .box__right {
         margin-top: 150px;
         margin-right: 40px; } }
   .box__border {
     position: relative;
     display: block;
-    border: 1px solid #fff;
     min-height: 100%;
-    padding: 15px;
+    padding: 0 0 20px 0;
     z-index: 1; }
+    @media (min-width: 992px) {
+      .box__border {
+        border: 1px solid #fff;
+        padding: 15px; } }
   .box__star {
     font-size: 20px !important;
     color: #ea7b7a; }

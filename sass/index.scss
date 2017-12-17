@@ -16,7 +16,10 @@ h2 {
 }
 
 .navbar {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 40px;
+  }
 }
 
 .navbar-default {
@@ -24,11 +27,14 @@ h2 {
 
   .navbar-brand {
     font-family: 'Old Standard TT', Georgia, serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
     color: #fff;
+    @media (min-width: $screen-md-min) {
+      font-size: 29px;
+    }
   }
 }
 
@@ -48,22 +54,26 @@ main {
       margin-bottom: 40px;
     }
   }
+
+  img {
+    margin-top: 15px;
+  }
 }
 
 .box {
   @include make-xs-column(12);
   color: white;
-  width: 395px;
-  height: 310px;
   padding: 10px;
   @media (min-width: $screen-md-min) {
     margin-top: 150px;
     margin-left: 40px;
+    width: 395px;
+    height: 310px;
   }
 
   &__right {
     float: right;
-    @media (min-width: $screen-md-max) {
+    @media (min-width: $screen-md-min) {
       margin-top: 150px;
       margin-right: 40px;
     }
@@ -72,10 +82,13 @@ main {
   &__border {
     position: relative;
     display: block;
-    border: 1px solid #fff;
     min-height: 100%;
-    padding: 15px;
+    padding: 0 0 20px 0;
     z-index: 1;
+    @media (min-width: $screen-md-min) {
+      border: 1px solid #fff;
+      padding: 15px;
+    }
   }
 
   &__star {
