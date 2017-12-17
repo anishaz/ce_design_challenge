@@ -1,11 +1,11 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
 body {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Cinzel', serif;
+h1, h2, h3 {
+  font-family: 'Old Standard TT', serif;
 }
 
 
@@ -61,11 +61,20 @@ main {
 
 }
 
-.office-locations{
-  background-image: url(/assets/images/ww_logo.jpg);
+//Office Location section
+
+.locations{
+  @media (min-width: $screen-md-max) {
+    background-image: url(/assets/images/ww-logo.jpg);
+  };
+}
+
+.mini-box {
+  @include make-xs-column(12);
 }
 
 .footer {
+  @include make-xs-column(12);
   list-style: none;
 
   li {

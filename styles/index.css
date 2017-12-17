@@ -5815,10 +5815,10 @@ button.close {
     display: none !important; } }
 
 body {
-  font-family: 'Arimo', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
-h1, h2 {
-  font-family: 'Cinzel', serif; }
+h1, h2, h3 {
+  font-family: 'Old Standard TT', serif; }
 
 .navbar {
   margin-bottom: 0; }
@@ -5890,10 +5890,25 @@ h1, h2 {
       float: left;
       width: 25%; } }
 
-.office-locations {
-  background-image: url(/assets/images/ww_logo.jpg); }
+@media (min-width: 1199px) {
+  .locations {
+    background-image: url(/assets/images/ww-logo.jpg); } }
+
+.mini-box {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   list-style: none; }
   .footer li {
     display: inline-block; }
