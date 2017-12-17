@@ -83,9 +83,23 @@ main {
 //footer
 
 .footer {
+  @include make-xs-column(12);
   list-style: none;
+
+  li {
+    @media (min-width: $screen-md-min) {
+      display: inline-block;
+      padding: 20px;
+    };
+  }
 
   a:hover {
     text-decoration: none;
   }
+}
+
+.social-networks {
+  @media (min-width: $screen-md-min) {
+    padding: 20px;
+  };
 }

@@ -5908,6 +5908,20 @@ h1, h2, h3 {
   padding-right: 15px; }
 
 .footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   list-style: none; }
+  @media (min-width: 992px) {
+    .footer li {
+      display: inline-block;
+      padding: 20px; } }
   .footer a:hover {
     text-decoration: none; }
+
+@media (min-width: 992px) {
+  .social-networks {
+    padding: 20px; } }
