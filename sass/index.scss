@@ -9,7 +9,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+main {
+  padding-top: 70px;
+}
 a {
   @include links;
 }
@@ -93,7 +95,7 @@ main {
   }
 
   img {
-    margin-top: 15px;
+    margin-top: 5px;
     @media (min-width: $screen-md-min) {
       margin-top: 5px;
       margin-left: 2px;
